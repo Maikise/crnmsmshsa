@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+    <title>今天是你烧开水呢？</title>
+    <style>
+        body{
+            background: url("R-C.jpg") ;
+            background-size: 100% 100%;
+        }
+    </style>
+
+</head>
+
+
+
+
+<body>
+
+<div style="display: block; margin: 500px auto; width: 500px;">
+    <button type="button" class="tn btn-primary btn-lg" id="btn">该烧水辣</button>
+
+</div>
+
+<script>
+    document.getElementById("btn").onclick = function (){
+
+        let ran;
+        let who ="xqx";
+        ran =   Math.floor(Math.random() * 4);
+            switch (ran){
+                case 0:
+                    who = "yxyl"
+
+                    break;
+                case 1:
+                    who = "shelter"
+                    break;
+                case 2:
+                    who = "ljj"
+
+                    break;
+                case 3:
+                    who ="xqx"
+
+                    break;
+
+            }
+            alert(who)
+    }
+
+</script>
+</body>
+</html>
