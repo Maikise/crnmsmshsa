@@ -11,7 +11,20 @@
         }
         p2 {
             font-size: 45px;
+            color: #ff192e;
         }
+        p.oblique {
+            font-size: 100px;
+            font-style: oblique;
+            color: #c7254e;
+        }
+        button {
+            background-color: navy;
+            color: #c7254e	;
+            font-size: 50px;
+            border-radius: 30px;
+        }
+
 
         body{
             background-image: url("R-C.jpg");
@@ -27,15 +40,21 @@
 <body>
 <p1>已经</p1>
 <br>
-<p1 id="times"></p1>
+<p class="oblique" id="times"></p>
 <br>
 <p1>了</p1>
 <br>
-<p2>你为什么还不去烧开水？</p2>
+<p2>而你为什么还不去烧开水？</p2>
 
 
+<br>
 
-    <button type="button" class="btn btn-primary btn-lg btn-block" id = "btn">            点这里决定谁来烧水            </button>
+<div style="display: block; margin: 0 auto; width: 50%;">
+
+
+    <button type="button" id = "btn">      点这里决定谁来烧水     </button>
+</div>
+
 <!--    <button type="button" class="btn btn-default btn-lg btn-block">（块级元素）Block level button</button>-->
 <!--    <button type="button" class="tn btn-primary btn-lg" id="btn">该烧水辣</button>-->
 </div>
