@@ -4,34 +4,50 @@
     <meta charset="UTF-8">
     <link href="css/bootstrap.css" rel="stylesheet" />
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-
-    <title>今天是你烧开水吗？</title>
+    <title>今天是你烧开水呢？</title>
     <style>
+        p1 {
+            font-size: 100px;
+        }
+        p2 {
+            font-size: 45px;
+        }
+
         body{
-        background-image: url("R-C.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 100vh;
-        margin: 0px;
-        padding: 0px;
+            background-image: url("R-C.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            margin: 0px;
+            padding: 0px;
         }
     </style>
-
 </head>
-
-
-
-
 <body>
+<p1>已经</p1>
+<br>
+<p1 id="times"></p1>
+<br>
+<p1>了</p1>
+<br>
+<p2>你为什么还不去烧开水？</p2>
 
-<div style="display: block; margin: 500px auto; width: 500px;">
-    <button type="button" class="btn btn-primary btn-lg btn-block" id = "btn">            该烧水辣            </button>
 
+
+    <button type="button" class="btn btn-primary btn-lg btn-block" id = "btn">            点这里决定谁来烧水            </button>
+<!--    <button type="button" class="btn btn-default btn-lg btn-block">（块级元素）Block level button</button>-->
+<!--    <button type="button" class="tn btn-primary btn-lg" id="btn">该烧水辣</button>-->
 </div>
-
 <script>
+
+    function getNowTime(){
+        var date=new Date();
+        var localedata=date.toLocaleString();
+        var divtime=document.getElementById("times");
+        divtime.innerHTML=localedata;
+    }
+    setInterval("getNowTime()",1000);
     document.getElementById("btn").onclick = function (){
 
         let ran;
