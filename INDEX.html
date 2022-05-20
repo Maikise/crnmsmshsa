@@ -13,6 +13,11 @@
             font-size: 50px;
             color: #b92c28;
         }
+        p4{
+            font-size: 150px;
+            color: blueviolet;
+
+        }
         p.oblique {
             font-size: 100px;
             font-style: oblique;
@@ -35,11 +40,14 @@
             margin: 0px;
             padding: 0px;
         }
+
     </style>
 </head>
 <body>
 <div style="display: block; margin: 0 auto; width: 50%;">
-<p1>已经</p1>
+
+
+    <p1>已经</p1>
 <br>
 <p2 class="oblique" id="times"></p2>
 <br>
@@ -48,13 +56,20 @@
 <p2>而你为什么还不去烧开水？</p2>
 
 
-<br>
 
+
+<br>
+    <a href="https://cn.bing.com/?mkt=zh-CN&mkt=zh-CN" ></a>
+
+    <p4 style = "width: 100%;display: block;text-align: center;" id="who1"></p4>
+    <br>
 
 
 
     <button type="button" id = "btn">      点这里决定谁来烧水     </button>
 </div>
+
+
 
 <!--    <button type="button" class="btn btn-default btn-lg btn-block">（块级元素）Block level button</button>-->
 <!--    <button type="button" class="tn btn-primary btn-lg" id="btn">该烧水辣</button>-->
@@ -69,29 +84,24 @@
     }
     setInterval("getNowTime()",1000);
     document.getElementById("btn").onclick = function (){
-
         let ran;
         let who ="xqx";
         ran =   Math.floor(Math.random() * 4);
             switch (ran){
                 case 0:
                     who = "yxyl"
-
                     break;
                 case 1:
                     who = "shelter"
                     break;
                 case 2:
                     who = "ljj"
-
                     break;
                 case 3:
                     who ="xqx"
-
                     break;
-
             }
-            alert(who)
+        document.getElementById("who1").innerText=who;
     }
 
 </script>
